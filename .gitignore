@@ -39,3 +39,6 @@ development.py
 
 # Vim swp files
 *.swp
+
+# Log directory
+logs/
