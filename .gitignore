@@ -33,3 +33,9 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+# Settings for development use only
+development.py
+
+# Vim swp files
+*.swp
