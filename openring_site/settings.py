@@ -1,6 +1,7 @@
 # Django settings for openring_site project.
 
 import socket
+import os
 
 
 HOST_NAME = ['']
@@ -30,6 +31,11 @@ DATABASES = {
         'PORT': DB_PORT,                      # Set to empty string for default. Not used with sqlite3.
     }
 }
+
+# Path for manage.py
+PROJECT_PATH = os.path.dirname(__file__)
+# Project root path
+PROJECT_ROOT = os.path.abspath(os.path.join(PROJECT_PATH, os.path.pardir))
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -120,6 +126,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    os.path.abspath(os.path.join(PROJECT_ROOT, 'templates')),
 )
 
 INSTALLED_APPS = (
@@ -129,10 +136,12 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
+
+    # Django admin
+    'django.contrib.admin',
+
+    # Django admin docs
+    'django.contrib.admindocs',
 )
 
 # A sample logging configuration. The only tangible logging
