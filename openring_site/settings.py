@@ -44,6 +44,11 @@ LANGUAGES = [
     ('en', 'English'),
 ]
 
+# Default languge for Django cms
+CMS_LANGUAGES = (
+    ('en', gettext('English')),
+)
+
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
@@ -153,8 +158,8 @@ TEMPLATE_DIRS = (
 )
 
 CMS_TEMPLATES = (
-    ('home.html', 'Home Page'),
-    ('blog.html', 'Blog Page'),
+    ('home.html', gettext('Home Page')),
+    ('blog.html', gettext('Blog Page')),
 )
 
 INSTALLED_APPS = (
