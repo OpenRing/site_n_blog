@@ -12,6 +12,8 @@ if socket.gethostname() in HOST_NAME:
 else:
     from development import *
 
+gettext = lambda s: s
+
 DEBUG = DEBUG
 TEMPLATE_DEBUG = DEBUG
 
@@ -142,6 +144,24 @@ INSTALLED_APPS = (
 
     # Django admin docs
     'django.contrib.admindocs',
+
+    # Django cms
+    'cms',
+
+    # Cms plugins
+    'cms.plugins.text',
+
+    # Modified preorder tree traverser
+    'mptt',
+
+    # Helper menus for django
+    'menus',
+
+    # Database imgration tool
+    'south',
+
+    # Template blocks for extra functionality
+    'sekizai',
 )
 
 # A sample logging configuration. The only tangible logging
