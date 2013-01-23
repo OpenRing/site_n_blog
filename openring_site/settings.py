@@ -117,6 +117,12 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    # Django cms middleware
+    'cms.middleware.multilingual.MultilingualURLMiddleware',
+    'cms.middleware.page.CurrentPageMiddleware',
+    'cms.middleware.user.CurrentUserMiddleware',
+    'cms.middleware.toolbar.ToolbarMiddleware',
 )
 
 ROOT_URLCONF = 'openring_site.urls'
