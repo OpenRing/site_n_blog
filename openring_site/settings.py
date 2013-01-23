@@ -147,6 +147,11 @@ TEMPLATE_DIRS = (
     os.path.abspath(os.path.join(PROJECT_ROOT, 'templates')),
 )
 
+CMS_TEMPLATES = (
+    ('home.html', 'Home Page'),
+    ('blog.html', 'Blog Page'),
+)
+
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
