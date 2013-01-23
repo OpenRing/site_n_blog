@@ -39,6 +39,11 @@ PROJECT_PATH = os.path.dirname(__file__)
 # Project root path
 PROJECT_ROOT = os.path.abspath(os.path.join(PROJECT_PATH, os.path.pardir))
 
+# Default language
+LANGUAGES = [
+    ('en', 'English'),
+]
+
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
