@@ -1,7 +1,7 @@
 # Django settings for openring_site project.
 
 import socket
-
+import os
 
 HOST_NAME = ['']
 
@@ -30,6 +30,11 @@ DATABASES = {
         'PORT': DB_PORT,                      # Set to empty string for default. Not used with sqlite3.
     }
 }
+
+# Path for manage.py
+PROJECT_PATH = os.path.dirname(__file__)
+# Project root path
+PROJECT_ROOT = os.path.abspath(os.path.join(PROJECT_PATH,os.path.pardir))
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
