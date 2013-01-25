@@ -11,6 +11,8 @@ if socket.gethostname() in HOST_NAME:
 else:
     from development import *
 
+gettext = lambda s: s
+
 DEBUG = DEBUG
 TEMPLATE_DEBUG = DEBUG
 
@@ -34,7 +36,17 @@ DATABASES = {
 # Path for manage.py
 PROJECT_PATH = os.path.dirname(__file__)
 # Project root path
-PROJECT_ROOT = os.path.abspath(os.path.join(PROJECT_PATH,os.path.pardir))
+PROJECT_ROOT = os.path.abspath(os.path.join(PROJECT_PATH, os.path.pardir))
+
+# Default language
+LANGUAGES = [
+    ('en', 'English'),
+]
+
+# Default languge for Django cms
+CMS_LANGUAGES = (
+    ('en', gettext('English')),
+)
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -64,18 +76,18 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = ''
+MEDIA_ROOT = os.path.join(PROJECT_PATH, "media")
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
-MEDIA_URL = ''
+MEDIA_URL = '/media/'
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = ''
+STATIC_ROOT = os.path.join(PROJECT_PATH, "static")
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
@@ -114,6 +126,22 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    # Django cms middleware
+    'cms.middleware.multilingual.MultilingualURLMiddleware',
+    'cms.middleware.page.CurrentPageMiddleware',
+    'cms.middleware.user.CurrentUserMiddleware',
+    'cms.middleware.toolbar.ToolbarMiddleware',
+)
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.contrib.auth.context_processors.auth',
+    'django.core.context_processors.i18n',
+    'django.core.context_processors.request',
+    'django.core.context_processors.media',
+    'django.core.context_processors.static',
+    'cms.context_processors.media',
+    'sekizai.context_processors.sekizai',
 )
 
 ROOT_URLCONF = 'openring_site.urls'
@@ -125,6 +153,12 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    os.path.abspath(os.path.join(PROJECT_ROOT, 'templates')),
+)
+
+CMS_TEMPLATES = (
+    ('home.html', gettext('Home Page')),
+    ('blog.html', gettext('Blog Page')),
 )
 
 INSTALLED_APPS = (
@@ -134,10 +168,30 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
+
+    # Django admin
+    'django.contrib.admin',
+
+    # Django admin docs
+    'django.contrib.admindocs',
+
+    # Django cms
+    'cms',
+
+    # Cms plugins
+    'cms.plugins.text',
+
+    # Modified preorder tree traverser
+    'mptt',
+
+    # Helper menus for django
+    'menus',
+
+    # Database imgration tool
+    'south',
+
+    # Template blocks for extra functionality
+    'sekizai',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -147,24 +201,50 @@ INSTALLED_APPS = (
 # more details on how to customize your logging configuration.
 LOGGING = {
     'version': 1,
-    'disable_existing_loggers': False,
-    'filters': {
-        'require_debug_false': {
-            '()': 'django.utils.log.RequireDebugFalse'
-        }
+    'disable_existing_loggers': True,
+    'formatters': {
+        'verbose': {
+            'format': '%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s'
+        },
+        'detailed': {
+            'format': '%(asctime)-8s %(module)-8s line:%(lineno)-4d '
+            '%(levelname)-8s %(message)s',
+        },
     },
     'handlers': {
-        'mail_admins': {
-            'level': 'ERROR',
-            'filters': ['require_debug_false'],
-            'class': 'django.utils.log.AdminEmailHandler'
+        'file': {
+            'class': 'logging.handlers.RotatingFileHandler',
+            'level': 'DEBUG',
+            'formatter': 'detailed',
+            'filename': os.path.abspath(os.path.join(PROJECT_ROOT, "logs/openring.log")),
+            'mode': 'a',
+            'maxBytes': 10485760,
+            'backupCount': 5,
+        },
+        'sentry': {
+            'level': 'DEBUG',
+            'class': 'raven.contrib.django.raven_compat.handlers.SentryHandler',
+        },
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose'
         }
     },
     'loggers': {
-        'django.request': {
-            'handlers': ['mail_admins'],
-            'level': 'ERROR',
-            'propagate': True,
+        'openring': {
+            'level': 'DEBUG',
+            'handlers': ['console', 'sentry', 'file'],
+            'propagate': False,
         },
-    }
+        'django.request': {
+            'level': 'ERROR',
+            'handlers': ['console', 'sentry', 'file'],
+            'propagate': False,
+        },
+    },
 }
+
+# get csc logger
+import logging
+LOGGER = logging.getLogger('openring')
