@@ -9,9 +9,37 @@ body {
 }
 
 #wrapper {
-    border : 1px solid black ;
     height: auto !important;
     margin: 0 0 -330px;
     min-height: 100%;
 }
 /***************** body end **********************/
+
+
+/***************** hearder start **********************/
+#header {
+    border : 1px solid black ;
+    width: 940px;
+    margin: auto;
+}
+/***************** hearder end **********************/
+
+/***************** bread crumb start **********************/
+#bread_crumb { 
+    border : 1px solid black ;
+}
+/***************** bread crumb end **********************/
+
+/***************** container start **********************/
+#container {
+    border : 1px solid black ;
+    width: 940px;
+    margin: auto;
+}
+/***************** container end **********************/
+
+/***************** footer start **********************/
+#footer { 
+    border : 1px solid black ;
+}
+/***************** footer end **********************/
