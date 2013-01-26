@@ -1,12 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 {% load cms_tags sekizai_tags %}
+
 <html>
-  <head>
-      {% render_block "css" %}
-  </head>
-  <body>
-      {% cms_toolbar %}
-      {% placeholder base_content %}
-      {% block base_content %}{% endblock %}
-      {% render_block "js" %}
-  </body>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Welcome to Openring</title>
+
+        <!--render css-->
+        {% render_block "css" %}
+
+        <!--link css-->
+        <link href="{{ STATIC_URL }}css/openring.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <!--for cms toolbar-->
+        {% cms_toolbar %}
+
+        <div id="wrapper">
+
+
+            Finally, setup the DATABASES part of the file to reflect your database deployment. If you just want to try out things locally, sqlite3 is the easiest database to set up, however it should not be used in production. If you still wish to use it for now, this is what your DATABASES setting should look like:
+
+        </div>
+
+        <!--render js-->
+        {% render_block "js" %}
+    </body>
+
 </html>
