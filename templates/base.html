@@ -24,9 +24,11 @@
                     {% placeholder "logo" %}
                 </div>
                 <div class="menu_container" id="" name="">
-                    <div class="menu" id="" name="">
-                        menu goes here
-                    </div>
+                    <ul class="menu" id="" name="">
+                        <!--for cms menu tags-->
+                        {% load menu_tags %}
+                        {% show_menu %}
+                    </ul>
                 </div>
             </div>
             <div id="bread_crumb">
