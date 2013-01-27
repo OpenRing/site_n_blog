@@ -42,3 +42,6 @@ development.py
 
 # Log directory
 logs/
+
+# Media files
+media/
