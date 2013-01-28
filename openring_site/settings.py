@@ -185,6 +185,7 @@ INSTALLED_APPS = (
     # Cms plugins
     'cms.plugins.text',
     'cms.plugins.picture',
+    'cms.plugins.snippet',
 
     # Modified preorder tree traverser
     'mptt',
