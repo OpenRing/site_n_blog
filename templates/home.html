@@ -1,6 +1,13 @@
+<!--IMPORTANT : Make sure your home template reverse_id is "home" as it helps to inherit all the placeholders to other pages-->
+
 {% extends "base.html" %}
 {% load cms_tags %}
 
-{% block base_content %}
-  {% placeholder template_1_content %}
+{% block logo %}
+<!--Logo-->
+{% placeholder "logo" %}
 {% endblock %}
+
+{% block content %}
+I am in home
+{% endblock content %}
