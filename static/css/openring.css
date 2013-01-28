@@ -70,7 +70,11 @@ body {
 
 /***************** bread crumb start **********************/
 #bread_crumb { 
-    border : 1px solid black ;
+    background: #FFFFFF;
+    border-bottom: 1px solid #EDEDED;
+    border-top: 1px solid #EDEDED;
+    padding: 8px 4px;
+    min-height: 40px;
 }
 /***************** bread crumb end **********************/
 
