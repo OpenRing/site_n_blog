@@ -83,8 +83,20 @@ body {
     border : 1px solid black ;
     width: 940px;
     margin: auto;
+    overflow: hidden;
 }
 /***************** container end **********************/
+
+/***************** home container start **********************/
+.os_stack {
+    border: 1px solid black;
+    float: left;
+    margin: 60px 45px;
+    min-height: 300px;
+    width: 40%;
+}
+
+/***************** home container end **********************/
 
 /***************** footer start **********************/
 #footer { 
