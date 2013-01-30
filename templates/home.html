@@ -4,16 +4,24 @@
 {% load cms_tags %}
 
 {% block logo %}
-<!--Logo-->
-{% placeholder "logo" %}
+    <!--Logo-->
+    {% placeholder "logo" %}
 {% endblock %}
 
 {% block content %}
+    <!--open source stack-->
     <div class="os_stack">
-        {% placeholder "opensource_stack" %}
+        {% placeholder "opensource_stack" or %}
+            <!--default this template if no placeholder found-->
+            {% include "snippet/opensource_stack.html" %}
+        {% endplaceholder %}
     </div>
 
+    <!--open source contribution-->
     <div class="os_stack">
-        {% placeholder "opensource_contribution" %}
+        {% placeholder "opensource_contribution" or %}
+            <!--default this template if no placeholder found-->
+            {% include "snippet/opensource_contribution.html" %}
+        {% endplaceholder %}
     </div>
 {% endblock content %}
