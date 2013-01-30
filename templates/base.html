@@ -21,7 +21,9 @@
         <div id="wrapper">
             <div id="header">
                 <div class="logo" id="" name="">
-                    {% placeholder "logo" inherit %}
+                    <!--block for displaying logo-->
+                    {% block logo %}
+                    {% endblock %}
                 </div>
                 <div class="menu_container" id="" name="">
                     <ul class="menu" id="" name="">
@@ -33,14 +35,21 @@
             </div>
 
             <div id="bread_crumb">
+                <!--block to display bread crum and search-->
                 {% block bread_crumb %}{% endblock %}
             </div>
 
             <div id="container">
-                Finally, setup the DATABASES part of the file to reflect your database deployment. If you just want to try out things locally, sqlite3 is the easiest database to set up, however it should not be used in production. If you still wish to use it for now, this is what your DATABASES setting should look like:
+                {% block content %}
+                {% endblock %}
             </div>
             <div id="footer">
-                Finally, setup the DATABASES part of the file to reflect your database deployment. If you just want to try out things locally, sqlite3 is the easiest database to set up, however it should not be used in production. If you still wish to use it for now, this is what your DATABASES setting should look like:
+                <div class="footer_container" id="" name="">
+                    <div class="copyright" id="" name="">
+                        Powered by Django and Django-CMS </br>
+                        © 2012 OpenRing
+                    </div>
+                </div>
             </div>
 
         </div>

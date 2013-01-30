@@ -80,14 +80,39 @@ body {
 
 /***************** container start **********************/
 #container {
-    border : 1px solid black ;
     width: 940px;
     margin: auto;
+    overflow: hidden;
 }
 /***************** container end **********************/
 
+/***************** home container start **********************/
+.os_stack {
+    background: none repeat scroll 0 0 #EDEDED;
+    border: 1px solid #CCCCCC;
+    float: left;
+    margin: 60px 45px;
+    min-height: 300px;
+    width: 40%;
+    cursor: pointer;
+}
+
+/***************** home container end **********************/
+
 /***************** footer start **********************/
 #footer { 
-    border : 1px solid black ;
+    border: 1px solid #EDEDED;
+    border-top: 1px solid #999999;
+    background: none repeat scroll 0 0 #CBCBCB;
+    color: #717171;
+    font-size: 10px;
+    line-height: 15px;
+}
+.footer_container {
+    margin: 20px 140px;
+}
+.copyright {
+    margin: 10px 20px;
+    width: 50%;
 }
 /***************** footer end **********************/
