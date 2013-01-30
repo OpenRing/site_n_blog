@@ -45,3 +45,6 @@ logs/
 
 # Media files
 media/
+
+# Rope project config
+.ropeproject/
