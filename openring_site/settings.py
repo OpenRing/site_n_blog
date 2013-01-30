@@ -166,6 +166,7 @@ CMS_TEMPLATES = (
     ('blog.html', gettext('Blog Page')),
 )
 
+
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -188,6 +189,7 @@ INSTALLED_APPS = (
     'cms.plugins.text',
     'cms.plugins.picture',
     'cms.plugins.snippet',
+    'cmsplugin_zinnia',
 
     # Zinnia for Blogging
     'zinnia',
@@ -206,6 +208,17 @@ INSTALLED_APPS = (
 
     # Template blocks for extra functionality
     'sekizai',
+)
+
+# For django cms and zinnia
+ZINNIA_ENTRY_BASE_MODEL = 'cmsplugin_zinnia.placeholder.EntryPlaceholder'
+
+# Menus for django cms and zinnia
+CMSPLUGIN_ZINNIA_APP_MENUS = (
+    'cmsplugin_zinnia.menu.EntryMenu',
+    'cmsplugin_zinnia.menu.CategoryMenu',
+    'cmsplugin_zinnia.menu.TagMenu',
+    'cmsplugin_zinnia.menu.AuthorMenu'
 )
 
 # A sample logging configuration. The only tangible logging
