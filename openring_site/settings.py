@@ -145,6 +145,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.static',
     'cms.context_processors.media',
     'sekizai.context_processors.sekizai',
+    'zinnia.context_processors.version',
 )
 
 ROOT_URLCONF = 'openring_site.urls'
@@ -172,6 +173,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.comments',
 
     # Django admin
     'django.contrib.admin',
@@ -186,6 +188,12 @@ INSTALLED_APPS = (
     'cms.plugins.text',
     'cms.plugins.picture',
     'cms.plugins.snippet',
+
+    # Zinnia for Blogging
+    'zinnia',
+
+    # Tagging app
+    'tagging',
 
     # Modified preorder tree traverser
     'mptt',

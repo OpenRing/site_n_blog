@@ -20,8 +20,14 @@ urlpatterns = patterns('',
                        # Django admin
                        url(r'^admin/', include(admin.site.urls)),
 
+                       # Django comments
+                       url(r'^comments/', include('django.contrib.comments.urls')),
+
                        # Django cms
                        url(r'^', include('cms.urls')),
+
+                       # Django zinnia for blogging
+                       url(r'^blog/', include('zinnia.urls')),
                        )
 
 
