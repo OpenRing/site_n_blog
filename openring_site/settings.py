@@ -211,7 +211,7 @@ INSTALLED_APPS = (
 )
 
 # For django cms and zinnia
-ZINNIA_ENTRY_BASE_MODEL = 'cmsplugin_zinnia.placeholder.EntryPlaceholder'
+# ZINNIA_ENTRY_BASE_MODEL = 'cmsplugin_zinnia.placeholder.EntryPlaceholder'
 
 # Menus for django cms and zinnia
 CMSPLUGIN_ZINNIA_APP_MENUS = (
