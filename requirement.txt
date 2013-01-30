@@ -4,8 +4,9 @@ MySQL-python==1.2.4
 PIL==1.1.7
 South==0.7.6
 argparse==1.2.1
+-e git://github.com/Fantomas42/cmsplugin-zinnia.git@3790581ae8f669ad37dcdaedf86ee6ca61e1d06b#egg=cmsplugin_zinnia-dev
 distribute==0.6.34
-django-blog-zinnia==0.12.1
+-e git://github.com/Fantomas42/django-blog-zinnia.git@faaebb111a8e60dbb08ad78ba28160822eb0dea5#egg=django_blog_zinnia-dev
 django-classy-tags==0.4
 django-cms==2.3.5
 django-mptt==0.5.2
