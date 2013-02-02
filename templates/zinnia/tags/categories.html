@@ -1,0 +1,14 @@
+{% load i18n %}
+<ul class="widget_list">
+  {% for category in categories %}
+  <li {% if category.slug == context_category.slug %} class="current"{% endif %}>
+    <a href="{{ category.get_absolute_url }}"
+       title="{% blocktrans %}Show all entries in {{ category }}{% endblocktrans %}">{{ category|capfirst }}</a>
+    ({{ category.count_entries_published }})
+  </li>
+  {% empty %}
+  <li>
+    {% trans "No categories yet." %}
+  </li>
+  {% endfor %}
+</ul>
