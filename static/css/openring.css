@@ -103,11 +103,33 @@ body {
     border: 1px solid #999999;
     float: left ;
     width: 60%;
+    margin: 0 15px;
 }
 .blog_entry_tools {
-    border: 1px solid #999999;
+    border-left: 1px solid #999999;
     float: left ;
     width: 30%;
+    padding: 0 12px;
+    margin: 0 15px;
+}
+.widget_title {
+    border-bottom: 1px solid #EDEDED;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 8px;
+}
+.widget {
+    margin: 10px 0 30px;
+}
+.widget_list {
+    list-style: none outside none;
+}
+.widget_list a {
+    color:#6F7071;
+    text-decoration:none;
+}
+.widget_list a:hover { 
+    text-decoration: underline;
 }
 
 /***************** blog end **********************/
