@@ -81,8 +81,8 @@ body {
 /***************** container start **********************/
 #container {
     width: 940px;
-    margin: auto;
     overflow: hidden;
+    margin: 25px auto 60px;
 }
 /***************** container end **********************/
 
@@ -91,13 +91,26 @@ body {
     background: none repeat scroll 0 0 #EDEDED;
     border: 1px solid #CCCCCC;
     float: left;
-    margin: 60px 45px;
+    margin: 40px 45px;
     min-height: 300px;
     width: 40%;
     cursor: pointer;
 }
-
 /***************** home container end **********************/
+
+/***************** blog start **********************/
+.blog_entry {
+    border: 1px solid #999999;
+    float: left ;
+    width: 60%;
+}
+.blog_entry_tools {
+    border: 1px solid #999999;
+    float: left ;
+    width: 30%;
+}
+
+/***************** blog end **********************/
 
 /***************** footer start **********************/
 #footer { 
