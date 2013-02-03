@@ -12,6 +12,7 @@
 <div class="blog_entry">
     {% placeholder "zinnia_blog" %}
 </div>
+
 <div class="blog_entry_tools">
     <div class="widget">
         <div class="widget_title">
@@ -25,11 +26,15 @@
         </div>
         {% get_tag_cloud %}
     </div>
+    <div class="widget">
+        <div class="widget_title">
+            {% trans "Calender" %}
+        </div>
+        {% get_calendar_entries %}
+    </div>
     <div class="archives">
         {% get_archives_entries_tree %}
     </div>
-    <div class="calender">
-        {% get_calendar_entries %}
-    </div>
 </div>
+
 {% endblock content %}

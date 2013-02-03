@@ -2,7 +2,7 @@
 body {
     background: #F8F8F8;
     font-family: verdana, Arial, Times New Roman;
-    font-size: 11.5px;
+    font-size: 11px;
     margin : 0px auto ;
     color : #6F7071;
     line-height: 20px;
@@ -106,7 +106,6 @@ body {
     margin: 0 15px;
 }
 .blog_entry_tools {
-    border-left: 1px solid #999999;
     float: left ;
     width: 30%;
     padding: 0 12px;
@@ -133,6 +132,15 @@ body {
 }
 .tag_cloud_container {
     padding: 10px 0 0 40px;
+}
+.calendar {
+    padding-left: 40px;
+    text-align: center;
+    width: 100%;
+}
+.entry {
+    border: 1px solid #999999;
+    background: none repeat scroll 0 0 #CBCBCB;
 }
 
 /***************** blog end **********************/
