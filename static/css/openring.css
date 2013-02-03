@@ -131,6 +131,9 @@ body {
 .widget_list a:hover { 
     text-decoration: underline;
 }
+.tag_cloud_container {
+    padding: 10px 0 0 40px;
+}
 
 /***************** blog end **********************/
 
