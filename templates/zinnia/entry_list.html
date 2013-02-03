@@ -1,6 +1,35 @@
 {% extends "zinnia/base.html" %}
+{% load i18n zinnia_tags %}
+{% load url from future %}
+
 
 {% block entry_content %}
-I am in entry list
+
+{% block content-title %}
+    {% if category %}
+    <h1>{% blocktrans %}Category archives: {{ category }}{% endblocktrans %}</h1>
+        {% if category.description %}
+        <p>{{ category.description|striptags|safe }}</p>
+        {% endif %}
+    {% endif %}
+
+    {% if tag %}
+    <h1>{% blocktrans %}Tag archives: {{ tag }}{% endblocktrans %}</h1>
+    {% endif %}
+
+    {% if author %}
+    <h1>{% blocktrans %}Author archives: {{ author }}{% endblocktrans %}</h1>
+    {% endif %}
+{% endblock content-title %}
+
+{% block content-loop %}
+    {% for object in object_list %}
+      {% include object.content_template with object_content=object.html_content|truncatewords_html:35|safe continue_reading=1 %}
+    {% empty %}
+      <p class="info">
+        <a href="{% url 'admin:zinnia_entry_add' %}">{% trans "No entries yet." %}</a>
+      </p>
+    {% endfor %}
+{% endblock content-loop %}
 
 {% endblock entry_content %}

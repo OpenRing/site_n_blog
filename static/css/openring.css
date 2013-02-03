@@ -15,6 +15,11 @@ body {
 }
 /***************** body end **********************/
 
+/***************** common start **********************/
+a:link {
+    text-decoration: none;
+}
+/***************** common end **********************/
 
 /***************** hearder start **********************/
 #header {
@@ -76,6 +81,10 @@ body {
     padding: 8px 4px;
     min-height: 40px;
 }
+.bread_crumb_holder {
+    width: 940px;
+    margin: auto;
+}
 /***************** bread crumb end **********************/
 
 /***************** container start **********************/
@@ -100,7 +109,6 @@ body {
 
 /***************** blog start **********************/
 .blog_entry {
-    border: 1px solid #999999;
     float: left ;
     width: 60%;
     margin: 0 15px;
@@ -144,6 +152,108 @@ body {
 }
 
 /***************** blog end **********************/
+
+/***************** blog entry list start **********************/
+.hentry{
+    float: left;
+    margin-bottom: 40px;
+}
+.entry-title{
+    border-bottom: 1px dotted #999999;
+    font-family: times new roman;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 4px 0;
+}
+.entry-title a{
+    color: #6F7071;
+}
+.entry-info {
+    font-size: 9px;
+}
+.publised_holder {
+    float: left;
+    width: 20%;
+    padding-top: 15px;
+}
+.publised_date {
+    background: none repeat scroll 0 0 #E8E8E8;
+    border: 1px solid #E8E8E8;
+    border-radius: 80px 80px 80px 80px;
+    float: left;
+    font-size: 11px;
+    height: 44px;
+    line-height: normal;
+    margin: 0;
+    overflow: hidden;
+    padding: 18px 16px;
+    text-align: center;
+    width: 50px;
+    font-weight: bold;
+}
+.entry-content {
+    float: left;
+    width: 80%;
+}
+.tag_category_holder {
+    float: left;
+    width: 62%;
+}
+.entry-tags {
+    border-top: 1px dotted #999999;
+    border-bottom: 1px dotted #999999;
+    float: left;
+    font-size: 10px;
+    padding-left: 10px;
+    width: 100%;
+    margin: 2px 0;
+}
+.entry-tags a{
+    color: #6F7071;
+}
+.entry-tags a:hover{
+    text-decoration: underline;
+}
+.entry-categories {
+    border-top: 1px dotted #999999;
+    border-bottom: 1px dotted #999999;
+    float: left;
+    font-size: 10px;
+    padding-left: 10px;
+    width: 100%;
+    margin: 2px 0;
+}
+.entry-categories a{
+    color: #6F7071;
+}
+.entry-categories a:hover{
+    text-decoration: underline;
+}
+.entry-image {
+    text-align: center;
+    float: right;
+}
+.entry-body {
+    float: left;
+}
+.continue-reading {
+    float: right;
+    margin: 10px 0;
+    padding: 4px 10px;
+}
+.continue-reading a{
+    color: #6F7071;
+}
+.continue-reading:hover { 
+    background-color: #E0E0E0;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+/***************** blog entry list end **********************/
 
 /***************** footer start **********************/
 #footer { 
