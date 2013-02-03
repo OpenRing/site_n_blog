@@ -32,8 +32,11 @@
         </div>
         {% get_calendar_entries %}
     </div>
-    <div class="archives">
-        {% get_archives_entries_tree %}
+    <div class="widget">
+        <div class="widget_title">
+            {% trans "Archives" %}
+        </div>
+        {% get_archives_entries %}
     </div>
 </div>
 
