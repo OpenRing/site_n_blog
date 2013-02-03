@@ -172,6 +172,12 @@ a:link {
 .entry-info {
     font-size: 9px;
 }
+.entry-info a{
+    color: peru;
+}
+.entry-info a:hover{
+    text-decoration: underline;
+}
 .publised_holder {
     float: left;
     width: 20%;
@@ -198,7 +204,7 @@ a:link {
 }
 .tag_category_holder {
     float: left;
-    width: 62%;
+    width: 95%;
 }
 .entry-tags {
     border-top: 1px dotted #999999;
@@ -241,17 +247,17 @@ a:link {
     float: right;
     margin: 10px 0;
     padding: 4px 10px;
+    background-color: #E0E0E0;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
 }
 .continue-reading a{
     color: #6F7071;
 }
 .continue-reading:hover { 
-    background-color: #E0E0E0;
     -webkit-box-shadow: 0 8px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
     box-shadow: 0 8px 6px -6px black;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
 }
 /***************** blog entry list end **********************/
 
