@@ -9,7 +9,7 @@
   {% endif %}
 
   {% for page_number in begin %}
-  <div class="page {% ifequal page.number page_number %}current{% endifequal %}">
+  <div class="page {% ifequal page.number page_number %}page_current{% endifequal %}">
     {% ifequal page.number page_number %}
     <strong>{{ page_number }}</strong>
     {% else %}
@@ -22,7 +22,7 @@
   {% if middle %}
   <div class="eldivpsis">&heldivp;</div>
   {% for page_number in middle %}
-  <div class="page {% ifequal page.number page_number %}current{% endifequal %}">
+  <div class="page {% ifequal page.number page_number %}page_current{% endifequal %}">
     {% ifequal page.number page_number %}
     <strong>{{ page_number }}</strong>
     {% else %}
@@ -36,7 +36,7 @@
   {% if end %}
   <div class="eldivpsis">&heldivp;</div>
   {% for page_number in end %}
-  <div class="page {% ifequal page.number page_number %}current{% endifequal %}">
+  <div class="page {% ifequal page.number page_number %}page_current{% endifequal %}">
     {% ifequal page.number page_number %}
     <strong>{{ page_number }}</strong>
     {% else %}

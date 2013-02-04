@@ -326,7 +326,7 @@ a:link {
     padding: 0 8px;
     text-align: center;
 }
-.current {
+.page_current {
     background: none repeat scroll 0 0 #999999;
     border: 1px solid #999999;
     color: white;
