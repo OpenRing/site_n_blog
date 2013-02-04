@@ -85,6 +85,25 @@ a:link {
     width: 940px;
     margin: auto;
 }
+.bread_crumbs_container {
+    float: left;
+    width: 60%;
+    padding: 10px;
+}
+.breadcrumbs {
+    float: left;
+    font-size: 10px;
+}
+.breadcrumbs a{
+    color: #6F7071;
+}
+.breadcrumbs a:hover{
+    text-decoration: underline;
+}
+.foot_print {
+    float: left;
+    margin-left: 6px;
+}
 .search_holder {
     width: 35%;
     float: right;
