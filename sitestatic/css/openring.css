@@ -2,7 +2,7 @@
 body {
     background: #F8F8F8;
     font-family: verdana, Arial, Times New Roman;
-    font-size: 11.5px;
+    font-size: 11px;
     margin : 0px auto ;
     color : #6F7071;
     line-height: 20px;
@@ -81,8 +81,8 @@ body {
 /***************** container start **********************/
 #container {
     width: 940px;
-    margin: auto;
     overflow: hidden;
+    margin: 25px auto 60px;
 }
 /***************** container end **********************/
 
@@ -91,13 +91,59 @@ body {
     background: none repeat scroll 0 0 #EDEDED;
     border: 1px solid #CCCCCC;
     float: left;
-    margin: 60px 45px;
+    margin: 40px 45px;
     min-height: 300px;
     width: 40%;
     cursor: pointer;
 }
-
 /***************** home container end **********************/
+
+/***************** blog start **********************/
+.blog_entry {
+    border: 1px solid #999999;
+    float: left ;
+    width: 60%;
+    margin: 0 15px;
+}
+.blog_entry_tools {
+    float: left ;
+    width: 30%;
+    padding: 0 12px;
+    margin: 0 15px;
+}
+.widget_title {
+    border-bottom: 1px solid #EDEDED;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 8px;
+}
+.widget {
+    margin: 10px 0 30px;
+}
+.widget_list {
+    list-style: none outside none;
+}
+.widget_list a {
+    color:#6F7071;
+    text-decoration:none;
+}
+.widget_list a:hover { 
+    text-decoration: underline;
+}
+.tag_cloud_container {
+    padding: 10px 0 0 40px;
+}
+.calendar {
+    padding-left: 40px;
+    text-align: center;
+    width: 100%;
+}
+.entry {
+    border: 1px solid #999999;
+    background: none repeat scroll 0 0 #CBCBCB;
+}
+
+/***************** blog end **********************/
 
 /***************** footer start **********************/
 #footer { 
@@ -108,7 +154,6 @@ body {
     line-height: 15px;
     position: absolute;
     width: 100%;
-    bottom: 0;
 }
 .footer_container {
     margin: 20px 140px;

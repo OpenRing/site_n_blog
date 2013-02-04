@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% load zinnia_tags i18n %}
+
+
+{% block logo %}
+<!--Inherit logo from home-->
+{% show_placeholder "logo" "home" %}
+{% endblock logo %}
+
+{% block bread_crumb %}
+
+{% endblock bread_crumb %}
+
+{% block content %}
+
+<div class="blog_entry">
+    {% block entry_content %}
+    {% endblock entry_content %}
+</div>
+
+<div class="blog_entry_tools">
+    <div class="widget">
+        <div class="widget_title">
+            {% trans "Categories" %}
+        </div>
+        {% get_categories %}
+    </div>
+    <div class="widget">
+        <div class="widget_title">
+            {% trans "Tag Cloud" %}
+        </div>
+        {% get_tag_cloud %}
+    </div>
+    <div class="widget">
+        <div class="widget_title">
+            {% trans "Calender" %}
+        </div>
+        {% get_calendar_entries %}
+    </div>
+    <div class="widget">
+        <div class="widget_title">
+            {% trans "Archives" %}
+        </div>
+        {% get_archives_entries %}
+    </div>
+</div>
+
+{% endblock content %}
