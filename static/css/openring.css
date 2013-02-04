@@ -313,6 +313,32 @@ a:link {
 }
 /***************** blog entry list end **********************/
 
+/***************** pagination start **********************/
+.paginator {
+    float: right;
+    width: auto;
+}
+.page {
+    background: none repeat scroll 0 0 #E8E8E8;
+    border: 1px solid #999999;
+    float: left;
+    margin: 8px;
+    padding: 0 8px;
+    text-align: center;
+}
+.current {
+    background: none repeat scroll 0 0 #999999;
+    border: 1px solid #999999;
+    color: white;
+}
+.page a{
+    color: #6F7071;
+}
+.page a:hover{
+    text-decoration: underline;
+}
+/***************** pagination end **********************/
+
 /***************** footer start **********************/
 #footer { 
     border-top: 1px solid #999999;
