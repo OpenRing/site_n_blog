@@ -5,31 +5,39 @@
 
 {% block entry_content %}
 
-{% block content-title %}
-    {% if category %}
-    <h1>{% blocktrans %}Category archives: {{ category }}{% endblocktrans %}</h1>
-        {% if category.description %}
-        <p>{{ category.description|striptags|safe }}</p>
+    <!--For title of the content-->
+    <div class="content_title">
+    {% block content-title %}
+        {% if category %}
+            <h1>{% blocktrans %}Category archives: {{ category }}{% endblocktrans %}</h1>
         {% endif %}
-    {% endif %}
 
-    {% if tag %}
-    <h1>{% blocktrans %}Tag archives: {{ tag }}{% endblocktrans %}</h1>
-    {% endif %}
+        {% if tag %}
+            <h1>{% blocktrans %}Tag archives: {{ tag }}{% endblocktrans %}</h1>
+        {% endif %}
 
-    {% if author %}
-    <h1>{% blocktrans %}Author archives: {{ author }}{% endblocktrans %}</h1>
-    {% endif %}
-{% endblock content-title %}
+        {% if author %}
+            <h1>{% blocktrans %}Author archives: {{ author }}{% endblocktrans %}</h1>
+        {% endif %}
+    {% endblock content-title %}
+    </div>
 
-{% block content-loop %}
-    {% for object in object_list %}
-      {% include object.content_template with object_content=object.html_content|truncatewords_html:35|safe continue_reading=1 %}
-    {% empty %}
-      <p class="info">
-        <a href="{% url 'admin:zinnia_entry_add' %}">{% trans "No entries yet." %}</a>
-      </p>
-    {% endfor %}
-{% endblock content-loop %}
+    <!--For the actual content-->
+    {% block content-loop %}
+        {% for object in object_list %}
+          {% include object.content_template with object_content=object.html_content|truncatewords_html:35|safe continue_reading=1 %}
+        {% empty %}
+          <p class="info">
+            <a href="{% url 'admin:zinnia_entry_add' %}">{% trans "No entries yet." %}</a>
+          </p>
+        {% endfor %}
+    {% endblock content-loop %}
+
+    <!--For pagination-->
+    {% block content-pagination %}
+        {% if is_paginated %}
+          {% zinnia_pagination page_obj %}
+        {% endif %}
+    {% endblock %}
 
 {% endblock entry_content %}
