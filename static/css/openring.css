@@ -85,6 +85,24 @@ a:link {
     width: 940px;
     margin: auto;
 }
+.search_holder {
+    width: 35%;
+    float: right;
+    padding: 6px;
+}
+.search_box {
+    border: 1px solid #999999;
+    padding: 4px;
+    margin: 0 4px;
+}
+.submitbutton {
+    border: 1px solid #999999;
+    background-color: #E0E0E0;
+    padding: 3px;
+    cursor: pointer;
+    margin: 0 4px;
+    color: #6F7071;
+}
 /***************** bread crumb end **********************/
 
 /***************** container start **********************/
