@@ -88,7 +88,7 @@ a:link {
 .search_holder {
     width: 35%;
     float: right;
-    padding: 6px;
+    padding: 8px;
 }
 .search_box {
     border: 1px solid #999999;
@@ -96,6 +96,8 @@ a:link {
     margin: 0 4px;
     color: #6F7071;
     width: 220px;
+    font-family: verdana, Arial, Times New Roman;
+    font-size: 11px;
 }
 .submitbutton {
     border: 1px solid #999999;
@@ -104,6 +106,9 @@ a:link {
     cursor: pointer;
     margin: 0 4px;
     color: #6F7071;
+    font-family: verdana, Arial, Times New Roman;
+    font-size: 11px;
+    font-weight: bold;
 }
 /***************** bread crumb end **********************/
 
