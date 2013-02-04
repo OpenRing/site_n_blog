@@ -1,0 +1,9 @@
+<div class="breadcrumbs">
+  {% for crumb in breadcrumbs %}
+    {% if crumb.url %}
+    <a href="{{ crumb.url }}" title="{{ crumb.name }}">{{ crumb.name }}</a>
+    {% else %}
+    {{ crumb.name }}
+    {% endif %}
+  {% endfor %}
+</div>
