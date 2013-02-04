@@ -1,6 +1,19 @@
 {% extends "zinnia/base.html" %}
+{% load zinnia_tags i18n %}
 
 {% block entry_content %}
-I am in entry details
+
+{% block entry-content %}
+  {% include object.content_template with object_content=object.html_content|safe %}
+{% endblock entry-content %}
+
+{% block entry-widgets %}
+<div class="entry-widgets">
+  <div class="entry-similar">
+    <h3>{% trans "Similar entries" %}</h3>
+    {% get_similar_entries %}
+  </div>
+</div>
+{% endblock entry-widgets %}
 
 {% endblock entry_content %}

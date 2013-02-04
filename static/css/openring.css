@@ -249,12 +249,12 @@ a:link {
     font-weight: bold;
 }
 .entry-content {
-    float: left;
-    width: 80%;
+    text-align: justify;
+    width: 100%;
 }
 .tag_category_holder {
     float: left;
-    width: 95%;
+    width: 99%;
 }
 .entry-tags {
     border-top: 1px dotted #999999;
