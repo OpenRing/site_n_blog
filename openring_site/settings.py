@@ -221,6 +221,9 @@ CMSPLUGIN_ZINNIA_APP_MENUS = (
     'cmsplugin_zinnia.menu.AuthorMenu'
 )
 
+# default pagination for zinnia blog
+ZINNIA_PAGINATION = 5
+
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
 # the site admins on every HTTP 500 error when DEBUG=False.
