@@ -110,24 +110,22 @@ a:link {
     padding: 8px;
 }
 .search_box {
-    border: 1px solid #999999;
-    padding: 4px;
-    margin: 0 4px;
+    border: 2px solid #EDEDED;
     color: #6F7071;
-    width: 220px;
-    font-family: verdana, Arial, Times New Roman;
+    font-family: verdana,Arial,Times New Roman;
     font-size: 11px;
+    padding: 4px;
+    width: 220px;
 }
 .submitbutton {
+    background-color: #999999;
     border: 1px solid #999999;
-    background-color: #E0E0E0;
-    padding: 3px;
+    color: white;
     cursor: pointer;
-    margin: 0 4px;
-    color: #6F7071;
-    font-family: verdana, Arial, Times New Roman;
+    font-family: verdana,Arial,Times New Roman;
     font-size: 11px;
     font-weight: bold;
+    padding: 4px;
 }
 /***************** bread crumb end **********************/
 
