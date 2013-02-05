@@ -324,10 +324,42 @@ a:link {
     margin-bottom: 20px;
 }
 .comment_form {
-    border: 1px solid;
     float: left;
     width: 100%;
     margin-bottom: 20px;
+}
+.comment_row {
+    float: left;
+    margin: 8px;
+    padding: 4px;
+    width: 95%;
+}
+.comment_row label{
+    float: left;
+    width: 100%;
+    font-weight: bold;
+}
+.comment_row input{
+    border: 2px solid #EDEDED;
+    color: #6F7071;
+    font-family: verdana,Arial,Times New Roman;
+    font-size: 11px;
+    padding: 4px;
+    width: 75%;
+}
+.comment_row textarea{
+    border: 2px solid #EDEDED;
+    color: #6F7071;
+    font-family: verdana,Arial,Times New Roman;
+    font-size: 11px;
+    padding: 4px;
+    width: 95%;
+}
+.comment_submit {
+    float: left;
+    margin: 4px 8px;
+    padding: 4px;
+    width: auto;
 }
 /***************** blog entry detail end **********************/
 
