@@ -17,7 +17,7 @@ DEBUG = DEBUG
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    ('pratz', 'pratz0909@gmail.com'),
+    ('OpenRing', 'openring0909@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -280,3 +280,12 @@ LOGGING = {
 # get csc logger
 import logging
 LOGGER = logging.getLogger('openring')
+
+DEFAULT_FROM_EMAIL = 'openring0909@gmail.com'
+
+# Email settings
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'openring0909@gmail.com'
+EMAIL_HOST_PASSWORD = 'OpenRing09'
+EMAIL_PORT = 587
