@@ -361,6 +361,40 @@ a:link {
     padding: 4px;
     width: auto;
 }
+.error {
+    float: left;
+    margin: 8px;
+    padding: 4px;
+    width: 95%;
+}
+.error label{
+    float: left;
+    width: 100%;
+    font-weight: bold;
+}
+.error input{
+    border: 2px solid #EDEDED;
+    color: #6F7071;
+    font-family: verdana,Arial,Times New Roman;
+    font-size: 11px;
+    padding: 4px;
+    width: 75%;
+}
+.error textarea{
+    border: 2px solid #EDEDED;
+    color: #6F7071;
+    font-family: verdana,Arial,Times New Roman;
+    font-size: 11px;
+    padding: 4px;
+    width: 95%;
+}
+.errorlist {
+    color: red;
+    float: right;
+    list-style: none outside none;
+    margin: 0;
+    width: 100%;
+}
 /***************** blog entry detail end **********************/
 
 /***************** pagination start **********************/
