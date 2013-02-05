@@ -6,7 +6,7 @@
     <div class="contactus_form">
 
         <div {% if form.email.errors %} class="error"{% endif %} class=" comment_row">
-            <label class="contact_field">{{ contact.email_label }}</label>
+            <label class="contact_field">{{ form.email.label }}</label>
 
             {% if form.email.errors %}
             {% for error in form.email.errors %}
@@ -88,5 +88,7 @@
     </form>
 
     {% else %}
-    {{ contact.thanks|safe }}
+    <div class="content_title" id="" name="">
+        {{ contact.thanks|safe }}
+    </div>
     {% endif %}
