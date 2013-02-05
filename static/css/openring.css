@@ -8,6 +8,7 @@ body {
     line-height: 20px;
 }
 
+
 #wrapper {
     height: auto !important;
     margin: 0 0 -330px;
@@ -17,6 +18,7 @@ body {
 
 /***************** common start **********************/
 a:link {
+    color: peru;
     text-decoration: none;
 }
 /***************** common end **********************/
