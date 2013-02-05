@@ -95,13 +95,13 @@
 
                 {% block continue-reading %}
                 {% if continue_reading %}
-                <div class="continue-reading">
-                    <a href="{{ object.get_absolute_url }}"
+                    <a style="color: #6F7071;" href="{{ object.get_absolute_url }}"
                         title="{% blocktrans with object=object.title %}Continue reading.. {{ object }}{% endblocktrans %}"
                         rel="bookmark">
-                        {% trans "Continue reading.." %}
+                        <div class="continue-reading">
+                            {% trans "Continue reading.." %}
+                        </div>
                     </a>
-                </div>
                 {% endif %}
                 {% endblock continue-reading %}
 

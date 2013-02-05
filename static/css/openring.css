@@ -312,6 +312,7 @@ a:link {
     background-color: #E0E0E0;
     -moz-border-radius: 6px;
     border-radius: 6px;
+    cursor: pointer;
 }
 .continue-reading a{
     color: #6F7071;
