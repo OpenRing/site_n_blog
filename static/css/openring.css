@@ -315,6 +315,19 @@ a:link {
 .entry-widgets {
     float: left;
     width: 100%;
+    margin-bottom: 20px;
+}
+.comments {
+    border: 1px solid;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.comment_form {
+    border: 1px solid;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
 }
 /***************** blog entry detail end **********************/
 
