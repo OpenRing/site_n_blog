@@ -311,6 +311,13 @@ a:link {
 }
 /***************** blog entry list end **********************/
 
+/***************** blog entry detail start **********************/
+.entry-widgets {
+    float: left;
+    width: 100%;
+}
+/***************** blog entry detail end **********************/
+
 /***************** pagination start **********************/
 .paginator {
     float: right;
