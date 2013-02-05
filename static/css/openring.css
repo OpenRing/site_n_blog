@@ -449,6 +449,12 @@ a:link {
 }
 /***************** pagination end **********************/
 
+/***************** contact us start **********************/
+.contactus_form {
+    width: 60%;
+    margin-left: 80px;
+}
+/***************** contact us end **********************/
 /***************** footer start **********************/
 #footer { 
     border-top: 1px solid #999999;
