@@ -190,6 +190,7 @@ INSTALLED_APPS = (
     'cms.plugins.text',
     'cms.plugins.picture',
     'cms.plugins.snippet',
+    'cmsplugin_contact',
     # 'cmsplugin_zinnia',
 
     # Zinnia for Blogging
