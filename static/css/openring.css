@@ -49,13 +49,17 @@ a:link {
     list-style: none outside none;
 }
 .selected {
+    background-color: #E0E0E0;
+    border-radius: 6px 6px 6px 6px;
+    cursor: pointer;
     float: left;
+    font-weight: bold;
     margin: 0 25px;
     padding: 10px 30px;
-    cursor:pointer;
-    font-weight: bold;
 }
 .sibling {
+    background-color: #E0E0E0;
+    border-radius: 6px 6px 6px 6px;
     float: left;
     margin: 0 25px;
     padding: 10px 30px;
