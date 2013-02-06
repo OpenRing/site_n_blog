@@ -23,8 +23,12 @@ urlpatterns = patterns('',
                        # Django comments
                        url(r'^comments/', include('django.contrib.comments.urls')),
 
+                       # Tiny MCE editor
+                       url(r'^tinymce/', include('tinymce.urls')),
+
                        # Django zinnia for blogging
                        url(r'^blog/', include('zinnia.urls')),
+
 
                        # Django cms
                        url(r'^', include('cms.urls')),

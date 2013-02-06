@@ -210,6 +210,9 @@ INSTALLED_APPS = (
 
     # Template blocks for extra functionality
     'sekizai',
+
+    # Tiny mce editor
+    'tinymce',
 )
 
 # For django cms and zinnia
