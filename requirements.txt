@@ -5,7 +5,9 @@ PIL==1.1.7
 South==0.7.6
 argparse==1.2.1
 cmsplugin-contact==1.0.0
+cmsplugin-zinnia==0.4
 distribute==0.6.34
+django-blog-zinnia==0.12.1
 django-classy-tags==0.4
 django-cms==2.3.5
 django-mptt==0.5.2
@@ -20,4 +22,3 @@ pyparsing==1.5.6
 pytz==2012j
 raven==3.1.4
 wsgiref==0.1.2
-yolk==0.4.3
