@@ -1,4 +1,9 @@
 /***************** body start **********************/
+html { 
+    margin:0; 
+    padding:0;
+    height:100%; 
+}
 body {
     background: #F8F8F8;
     font-family: verdana, Arial, Times New Roman;
@@ -6,6 +11,8 @@ body {
     margin : 0px auto ;
     color : #6F7071;
     line-height: 20px;
+    padding: 0;
+    height: 100%;
 }
 
 
@@ -13,6 +20,7 @@ body {
     height: auto !important;
     margin: 0 0 -330px;
     min-height: 100%;
+    position: relative;
 }
 /***************** body end **********************/
 
@@ -140,6 +148,7 @@ a:link {
     width: 940px;
     overflow: hidden;
     margin: 25px auto 60px;
+    padding-bottom: 100px;
 }
 /***************** container end **********************/
 
@@ -475,6 +484,8 @@ a:link {
     line-height: 15px;
     position: absolute;
     width: 100%;
+    bottom: 0;
+    height: 60px;
 }
 .footer_container {
     margin: 20px 140px;
