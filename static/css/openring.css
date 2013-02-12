@@ -480,18 +480,27 @@ a:link {
     border-top: 1px solid #999999;
     background: none repeat scroll 0 0 #CBCBCB;
     color: #717171;
-    font-size: 10px;
+    font-size: 9px;
     line-height: 15px;
     position: absolute;
     width: 100%;
     bottom: 0;
-    height: 60px;
+    height: auto;
 }
 .footer_container {
-    margin: 20px 140px;
+    width: 940px;
+    margin: 10px auto 5px;
+    overflow: hidden;
+}
+.best_viwed {
+    text-align: right;
+    width: 96%;
+    float: left;
+    font-style: italic;
 }
 .copyright {
-    margin: 10px 20px;
+    color: #444444;
     width: 50%;
+    float: left;
 }
 /***************** footer end **********************/
