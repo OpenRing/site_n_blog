@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="350"
+   height="100"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="drawing_new.svg"
+   inkscape:export-filename="/home/pratz/Desktop/drawing.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5295">
+      <stop
+         style="stop-color:#002c50;stop-opacity:1;"
+         offset="0"
+         id="stop5297" />
+      <stop
+         style="stop-color:#002c50;stop-opacity:0;"
+         offset="1"
+         id="stop5299" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="51.428572 : 43 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="242 : 33 : 1"
+       inkscape:persp3d-origin="121 : 22 : 1"
+       id="perspective3884" />
+    <filter
+       inkscape:collect="always"
+       id="filter3813"
+       x="-0.10619277"
+       width="1.2123855"
+       y="-0.12943381"
+       height="1.2588676">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="3.3879932"
+         id="feGaussianBlur3815" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5295"
+       id="linearGradient5301"
+       x1="57.676714"
+       y1="987.11133"
+       x2="153.24344"
+       y2="987.11133"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="171.60434"
+     inkscape:cy="65.478993"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="695"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-nodes="true"
+     inkscape:snap-bbox="false"
+     inkscape:bbox-paths="false"
+     inkscape:bbox-nodes="false"
+     inkscape:snap-global="true"
+     inkscape:snap-midpoints="true"
+     showborder="true" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-952.36218)">
+    <text
+       xml:space="preserve"
+       style="font-size:56.51657104px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:115.99999666%;letter-spacing:1.41291404px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#443c3c;fill-opacity:1;stroke:none;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
+       x="152.66347"
+       y="946.45575"
+       id="text2985"
+       sodipodi:linespacing="116%"
+       transform="scale(0.94837556,1.0544346)"><tspan
+         sodipodi:role="line"
+         id="tspan2987"
+         x="152.66347"
+         y="946.45575"
+         style="font-size:56.51657104px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#443c3c;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"><tspan
+           style="font-weight:bold;line-height:100%;letter-spacing:0px;fill:#443c3c;fill-opacity:1;-inkscape-font-specification:Liberation Mono Bold"
+           id="tspan3790">O</tspan><tspan
+           style="font-weight:bold;line-height:100%;letter-spacing:0px;-inkscape-font-specification:Liberation Mono Bold"
+           id="tspan5468">pe</tspan><tspan
+           style="font-weight:bold;line-height:100%;letter-spacing:0px;fill:#443c3c;fill-opacity:1;-inkscape-font-specification:Liberation Mono Bold"
+           id="tspan3786">n</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:63.2466507px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#003892;fill-opacity:1;stroke:none;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
+       x="51.645046"
+       y="1410.9038"
+       id="text2985-5"
+       sodipodi:linespacing="125%"
+       transform="scale(1.3599783,0.73530587)"><tspan
+         sodipodi:role="line"
+         id="tspan2987-2"
+         x="51.645046"
+         y="1410.9038"
+         style="font-size:63.2466507px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#003892;fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">ring</tspan></text>
+    <rect
+       style="fill:url(#linearGradient5301);fill-opacity:1;stroke:none;opacity:1;filter:url(#filter3813)"
+       id="rect3758"
+       width="76.57003"
+       height="62.821171"
+       x="67.175064"
+       y="955.70074"
+       transform="matrix(1.1681387,0,0,0.88488621,1.6951204,110.49909)" />
+  </g>
+</svg>
