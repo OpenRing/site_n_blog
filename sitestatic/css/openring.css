@@ -1,4 +1,9 @@
 /***************** body start **********************/
+html { 
+    margin:0; 
+    padding:0;
+    height:100%; 
+}
 body {
     background: #F8F8F8;
     font-family: verdana, Arial, Times New Roman;
@@ -6,15 +11,25 @@ body {
     margin : 0px auto ;
     color : #6F7071;
     line-height: 20px;
+    padding: 0;
+    height: 100%;
 }
+
 
 #wrapper {
     height: auto !important;
     margin: 0 0 -330px;
     min-height: 100%;
+    position: relative;
 }
 /***************** body end **********************/
 
+/***************** common start **********************/
+a:link {
+    color: peru;
+    text-decoration: none;
+}
+/***************** common end **********************/
 
 /***************** hearder start **********************/
 #header {
@@ -42,13 +57,17 @@ body {
     list-style: none outside none;
 }
 .selected {
+    background-color: #E0E0E0;
+    border-radius: 6px 6px 6px 6px;
+    cursor: pointer;
     float: left;
+    font-weight: bold;
     margin: 0 25px;
     padding: 10px 30px;
-    cursor:pointer;
-    font-weight: bold;
 }
 .sibling {
+    background-color: #E0E0E0;
+    border-radius: 6px 6px 6px 6px;
     float: left;
     margin: 0 25px;
     padding: 10px 30px;
@@ -76,6 +95,52 @@ body {
     padding: 8px 4px;
     min-height: 40px;
 }
+.bread_crumb_holder {
+    width: 940px;
+    margin: auto;
+}
+.bread_crumbs_container {
+    float: left;
+    width: 60%;
+    padding: 10px;
+}
+.breadcrumbs {
+    float: left;
+    font-size: 10px;
+}
+.breadcrumbs a{
+    color: #6F7071;
+}
+.breadcrumbs a:hover{
+    text-decoration: underline;
+}
+.foot_print {
+    float: left;
+    margin-left: 6px;
+}
+.search_holder {
+    width: 35%;
+    float: right;
+    padding: 8px;
+}
+.search_box {
+    border: 2px solid #EDEDED;
+    color: #6F7071;
+    font-family: verdana,Arial,Times New Roman;
+    font-size: 11px;
+    padding: 4px;
+    width: 220px;
+}
+.submitbutton {
+    background-color: #999999;
+    border: 1px solid #999999;
+    color: white;
+    cursor: pointer;
+    font-family: verdana,Arial,Times New Roman;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px;
+}
 /***************** bread crumb end **********************/
 
 /***************** container start **********************/
@@ -83,6 +148,7 @@ body {
     width: 940px;
     overflow: hidden;
     margin: 25px auto 60px;
+    padding-bottom: 100px;
 }
 /***************** container end **********************/
 
@@ -91,7 +157,7 @@ body {
     background: none repeat scroll 0 0 #EDEDED;
     border: 1px solid #CCCCCC;
     float: left;
-    margin: 40px 45px;
+    margin: 10px 45px;
     min-height: 300px;
     width: 40%;
     cursor: pointer;
@@ -100,7 +166,6 @@ body {
 
 /***************** blog start **********************/
 .blog_entry {
-    border: 1px solid #999999;
     float: left ;
     width: 60%;
     margin: 0 15px;
@@ -145,21 +210,303 @@ body {
 
 /***************** blog end **********************/
 
+/***************** blog entry list start **********************/
+.content_title {
+}
+.content_title h1 {
+    border: 1px solid peru;
+    margin-bottom: 25px;
+    padding: 15px 5px;
+    text-align: center;
+}
+.content_title p {
+    font-size: 9px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.hentry{
+    float: left;
+    margin-bottom: 40px;
+}
+.entry-title{
+    border-bottom: 1px dotted #999999;
+    font-family: times new roman;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 4px 0;
+}
+.entry-title a{
+    color: #6F7071;
+}
+.entry-info {
+    font-size: 9px;
+}
+.entry-info a{
+    color: peru;
+}
+.entry-info a:hover{
+    text-decoration: underline;
+}
+.publised_holder {
+    float: left;
+    width: 20%;
+    padding-top: 15px;
+}
+.publised_date {
+    background: none repeat scroll 0 0 #E8E8E8;
+    border: 1px solid #E8E8E8;
+    border-radius: 80px 80px 80px 80px;
+    float: left;
+    font-size: 11px;
+    height: 44px;
+    line-height: normal;
+    margin: 0;
+    overflow: hidden;
+    padding: 18px 16px;
+    text-align: center;
+    width: 50px;
+    font-weight: bold;
+}
+.entry-content {
+    text-align: justify;
+    width: 100%;
+}
+.tag_category_holder {
+    float: left;
+    width: 99%;
+}
+.entry-tags {
+    border-top: 1px dotted #999999;
+    border-bottom: 1px dotted #999999;
+    float: left;
+    font-size: 10px;
+    padding-left: 10px;
+    width: 100%;
+    margin: 2px 0;
+}
+.entry-tags a{
+    color: #6F7071;
+}
+.entry-tags a:hover{
+    text-decoration: underline;
+}
+.entry-categories {
+    border-top: 1px dotted #999999;
+    border-bottom: 1px dotted #999999;
+    float: left;
+    font-size: 10px;
+    padding-left: 10px;
+    width: 100%;
+    margin: 2px 0;
+}
+.entry-categories a{
+    color: #6F7071;
+}
+.entry-categories a:hover{
+    text-decoration: underline;
+}
+.entry-image {
+    text-align: center;
+    float: right;
+}
+.entry-body {
+    float: left;
+}
+.continue-reading {
+    float: right;
+    margin: 10px 0;
+    padding: 4px 10px;
+    background-color: #E0E0E0;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.continue-reading a{
+    color: #6F7071;
+}
+.continue-reading:hover { 
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+}
+/***************** blog entry list end **********************/
+
+/***************** blog entry detail start **********************/
+.entry-widgets {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.comment {
+    border: 2px solid #EDEDED;
+    /* float: left; */
+    margin: 8px;
+    padding: 8px;
+    width: 95%;
+}
+.comment_image {
+    border: 1px solid #CBCBCB;
+    padding: 2px;
+    width: 60px;
+    float: left;
+    margin: 0 8px 8px 0;
+}
+.comment_content {
+    padding: 2px 8px;
+    width: 98%;
+}
+.comment-info {
+    font-size: 9px;
+    width: 100%;
+}
+.fn {
+    color: peru;
+}
+.comments {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.comment_form {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.comment_row {
+    float: left;
+    margin: 8px;
+    padding: 4px;
+    width: 95%;
+}
+.comment_row label{
+    float: left;
+    width: 100%;
+    font-weight: bold;
+}
+.comment_row input{
+    border: 2px solid #EDEDED;
+    color: #6F7071;
+    font-family: verdana,Arial,Times New Roman;
+    font-size: 11px;
+    padding: 4px;
+    width: 75%;
+}
+.comment_row textarea{
+    border: 2px solid #EDEDED;
+    color: #6F7071;
+    font-family: verdana,Arial,Times New Roman;
+    font-size: 11px;
+    padding: 4px;
+    width: 95%;
+}
+.comment_submit {
+    float: left;
+    margin: 4px 8px;
+    padding: 4px;
+    width: auto;
+}
+.error {
+    float: left;
+    margin: 8px;
+    padding: 4px;
+    width: 95%;
+}
+.error label{
+    float: left;
+    width: 100%;
+    font-weight: bold;
+}
+.error input{
+    border: 2px solid #EDEDED;
+    color: #6F7071;
+    font-family: verdana,Arial,Times New Roman;
+    font-size: 11px;
+    padding: 4px;
+    width: 75%;
+}
+.error textarea{
+    border: 2px solid #EDEDED;
+    color: #6F7071;
+    font-family: verdana,Arial,Times New Roman;
+    font-size: 11px;
+    padding: 4px;
+    width: 95%;
+}
+.errorlist {
+    color: red;
+    float: right;
+    list-style: none outside none;
+    margin: 0;
+    width: 100%;
+}
+/***************** blog entry detail end **********************/
+
+/***************** pagination start **********************/
+.paginator {
+    float: right;
+    width: auto;
+}
+.page {
+    background: none repeat scroll 0 0 #E8E8E8;
+    border: 1px solid #999999;
+    float: left;
+    margin: 8px;
+    padding: 0 8px;
+    text-align: center;
+}
+.page_current {
+    background: none repeat scroll 0 0 #999999;
+    border: 1px solid #999999;
+    color: white;
+}
+.page a{
+    color: #6F7071;
+}
+.page a:hover{
+    text-decoration: underline;
+}
+/***************** pagination end **********************/
+
+/***************** contact us start **********************/
+.contactus_form {
+    width: 60%;
+    margin-left: 80px;
+}
+/***************** contact us end **********************/
 /***************** footer start **********************/
 #footer { 
     border-top: 1px solid #999999;
     background: none repeat scroll 0 0 #CBCBCB;
     color: #717171;
-    font-size: 10px;
+    font-size: 9px;
     line-height: 15px;
     position: absolute;
     width: 100%;
+    bottom: 0;
+    height: auto;
 }
 .footer_container {
-    margin: 20px 140px;
+    width: 940px;
+    margin: 10px auto 5px;
+    overflow: hidden;
+}
+.best_viwed {
+    text-align: right;
+    width: 96%;
+    float: left;
+    font-style: italic;
 }
 .copyright {
-    margin: 10px 20px;
+    color: #444444;
     width: 50%;
+    float: left;
+}
+.copyright a:hover{
+    text-decoration: underline;
+}
+.copyright a:visited{
+    color: peru;
 }
 /***************** footer end **********************/
