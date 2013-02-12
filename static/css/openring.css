@@ -503,4 +503,10 @@ a:link {
     width: 50%;
     float: left;
 }
+.copyright a:hover{
+    text-decoration: underline;
+}
+.copyright a:visited{
+    color: peru;
+}
 /***************** footer end **********************/
