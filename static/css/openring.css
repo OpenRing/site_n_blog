@@ -98,11 +98,11 @@ a:link {
 .bread_crumb_holder {
     width: 940px;
     margin: auto;
+    overflow: hidden;
 }
 .bread_crumbs_container {
     float: left;
     width: 60%;
-    padding: 10px;
 }
 .breadcrumbs {
     float: left;
@@ -121,7 +121,6 @@ a:link {
 .search_holder {
     width: 35%;
     float: right;
-    padding: 8px;
 }
 .search_box {
     border: 2px solid #EDEDED;
