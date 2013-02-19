@@ -1,19 +1,21 @@
 {% extends "base.html" %}
 {% load cms_tags %}
+{% load capture_as %}
 {% load zinnia_tags i18n %}
 
 
 {% block logo %}
-    {% comment %}
-    <!--Inherit logo from home-->
-    {% show_placeholder "logo" "home" %}
-    {% endcomment %}
+    <!--capture inherited logo from home-->
+    {% captureas blog_logo %}
+        {% show_placeholder "logo" "home" %}
+    {% endcaptureas %}
 
-    <!--this should be replaced with show_placeholder,-->
-    <!--but for now can not find any other alternative for this-->
-    {% placeholder "contact_logo" or %}
+    <!--check if inherited content exists-->
+    {% if blog_logo %}
+        {{ blog_logo }}
+    {% else %}
         <img src="{{ STATIC_URL }}images/logo.png" />
-    {% endplaceholder %}
+    {% endif %}
 {% endblock logo %}
 
 

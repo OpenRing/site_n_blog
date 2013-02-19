@@ -183,6 +183,9 @@ INSTALLED_APPS = (
     # Django admin docs
     'django.contrib.admindocs',
 
+    # For commom template tags only
+    'common_tags',
+
     # Django cms
     'cms',
 

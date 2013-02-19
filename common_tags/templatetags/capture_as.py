@@ -6,6 +6,7 @@ Custome template tag to capture template tags as variables
 
 # python/django imports
 from django import template
+from django.utils.safestring import mark_safe
 
 # project import
 
@@ -30,6 +31,13 @@ class CaptureasNode(template.Node):
         self.varname = varname
 
     def render(self, context):
-        output = self.nodelist.render(context)
-        context[self.varname] = output
+        # replace space and new line char with None
+        output = self.nodelist.render(context).replace(' ', '').replace('\n', '')
+
+        # tmp fix to check if the string is empty after stripping white spaces
+        # and new line char
+        if len(output) > 0:
+            output = self.nodelist.render(context)
+
+        context[self.varname] = mark_safe(output)
         return ''
