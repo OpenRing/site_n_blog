@@ -27,7 +27,7 @@ urlpatterns = patterns('',
                        url(r'^tinymce/', include('tinymce.urls')),
 
                        # Django zinnia for blogging
-                       url(r'^blog/', include('zinnia.urls')),
+                       url(r'^', include('zinnia.urls')),
 
 
                        # Django cms
