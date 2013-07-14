@@ -3,7 +3,7 @@
 
 <form action="{% comment_form_target %}" method="post" id="comment-form">
     {% csrf_token %}
-    <fieldset>
+    <fieldset class="field_set">
         <legend style="color:peru;" ><strong>{% trans "Post your comment" %}</strong></legend>
         <input type="hidden" name="next" value="{% url 'zinnia_comment_success' %}"/>
         {% for field in form %}
