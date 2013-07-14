@@ -3,13 +3,6 @@
 {% extends "base.html" %}
 {% load cms_tags %}
 
-{% block logo %}
-    <!--Logo-->
-    {% placeholder "logo" or %}
-        <img src="{{ STATIC_URL }}images/logo.png" />
-    {% endplaceholder %}
-{% endblock %}
-
 {% block content %}
     <!--open source stack-->
     <div class="os_stack">

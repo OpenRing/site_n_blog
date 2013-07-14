@@ -4,22 +4,6 @@
 {% load zinnia_tags i18n %}
 
 
-{% block logo %}
-
-    <!--capture inherited logo from home-->
-    {% captureas contact_logo %}
-        {% show_placeholder "logo" "home" %}
-    {% endcaptureas %}
-
-    <!--check if inherited content exists-->
-    {% if contact_logo %}
-        {{ contact_logo }}
-    {% else %}
-        <img src="{{ STATIC_URL }}images/logo.png" />
-    {% endif %}
-
-{% endblock logo %}
-
 {% block content %}
     {% block contactus %}
         {% placeholder "contactus" %}

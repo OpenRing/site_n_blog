@@ -37,12 +37,6 @@ a:link {
     margin: auto;
     min-height: 140px;
 }
-.logo {
-    width: 30%;
-    float: left;
-    margin: 30px 15px;
-    min-height: 75px;
-}
 .menu_container {
     width: 65%;
     float: left;
