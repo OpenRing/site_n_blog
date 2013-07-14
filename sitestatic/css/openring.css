@@ -5,11 +5,11 @@ html {
     height:100%; 
 }
 body {
-    background: #F8F8F8;
+    background: #1C1C1C;
     font-family: verdana, Arial, Times New Roman;
     font-size: 11px;
     margin : 0px auto ;
-    color : #6F7071;
+    color : #7E7F7F;
     line-height: 20px;
     padding: 0;
     height: 100%;
@@ -37,63 +37,49 @@ a:link {
     margin: auto;
     min-height: 140px;
 }
-.logo {
-    width: 30%;
-    float: left;
-    margin: 30px 15px;
-    min-height: 75px;
-}
 .menu_container {
     width: 65%;
     float: left;
-    margin: 30px 0;
+    margin: 30px 0 30px 30%;
     min-height: 75px;
-    position: relative;
 }
 .menu {
     bottom: 0;
     right: 0;
-    position: absolute;
     list-style: none outside none;
 }
 .selected {
-    background-color: #E0E0E0;
-    border-radius: 6px 6px 6px 6px;
+    border-bottom: 4px solid #0082E0;
+    color: #0082E0;
+    float: left;
+    font-weight: bold;
+    margin: 0 25px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: default;
+}
+.sibling {
+    color: #0082E0;
     cursor: pointer;
     float: left;
     font-weight: bold;
     margin: 0 25px;
     padding: 10px 30px;
-}
-.sibling {
-    background-color: #E0E0E0;
-    border-radius: 6px 6px 6px 6px;
-    float: left;
-    margin: 0 25px;
-    padding: 10px 30px;
-    cursor:pointer;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 .menu a {
     color:#6F7071;
     text-decoration:none;
 }
-.menu li:hover { 
-    background-color: #E0E0E0;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0 8px 6px -6px black;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-}
 /***************** hearder end **********************/
 
 /***************** bread crumb start **********************/
 #bread_crumb { 
-    background: #FFFFFF;
-    border-bottom: 1px solid #EDEDED;
-    border-top: 1px solid #EDEDED;
-    padding: 8px 4px;
-    min-height: 40px;
+    background: #1C1C1C;
+    padding: 10px 0px;
+    border-top: 2px solid #0082E0;
 }
 .bread_crumb_holder {
     width: 940px;
@@ -103,6 +89,7 @@ a:link {
 .bread_crumbs_container {
     float: left;
     width: 60%;
+    padding-left: 15px;
 }
 .breadcrumbs {
     float: left;
@@ -123,17 +110,18 @@ a:link {
     float: right;
 }
 .search_box {
-    border: 2px solid #EDEDED;
-    color: #6F7071;
+    background-color: #1C1C1C;
+    border: 1px solid #54A3B4;
+    color: #7E7F7F;
     font-family: verdana,Arial,Times New Roman;
     font-size: 11px;
     padding: 4px;
     width: 220px;
 }
 .submitbutton {
-    background-color: #999999;
-    border: 1px solid #999999;
-    color: white;
+    background-color: #54A3B4;
+    border: 1px solid #54A3B4;
+    color: #1C1C1C;
     cursor: pointer;
     font-family: verdana,Arial,Times New Roman;
     font-size: 11px;
@@ -176,7 +164,7 @@ a:link {
     margin: 0 15px;
 }
 .widget_title {
-    border-bottom: 1px solid #EDEDED;
+    border-bottom: 1px solid #7E7F7F;
     font-size: 11px;
     font-weight: bold;
     padding: 2px 8px;
@@ -203,8 +191,9 @@ a:link {
     width: 100%;
 }
 .entry {
-    border: 1px solid #999999;
-    background: none repeat scroll 0 0 #CBCBCB;
+    background: none repeat scroll 0 0 #1C1C1C;
+    border: 1px solid #54A3B4;
+    font-weight: bold;
 }
 
 /***************** blog end **********************/
@@ -254,9 +243,8 @@ a:link {
     padding-top: 15px;
 }
 .publised_date {
-    background: none repeat scroll 0 0 #E8E8E8;
-    border: 1px solid #E8E8E8;
-    border-radius: 80px 80px 80px 80px;
+    background: none repeat scroll 0 0 #54A3B4;
+    color: #1C1C1C;
     float: left;
     font-size: 11px;
     height: 44px;
@@ -314,21 +302,18 @@ a:link {
     float: left;
 }
 .continue-reading {
+    background: none repeat scroll 0 0 #54A3B4;
+    border: 1px solid #54A3B4;
     float: right;
     margin: 10px 0;
     padding: 4px 10px;
-    background-color: #E0E0E0;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
     cursor: pointer;
+    color: #1C1C1C;
+    font-weight: bold;
+    font-size: 9px;
 }
 .continue-reading a{
     color: #6F7071;
-}
-.continue-reading:hover { 
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0 8px 6px -6px black;
 }
 /***************** blog entry list end **********************/
 
@@ -339,14 +324,13 @@ a:link {
     margin-bottom: 20px;
 }
 .comment {
-    border: 2px solid #EDEDED;
-    /* float: left; */
+    border: 2px solid #7E7F7F;
     margin: 8px;
     padding: 8px;
     width: 95%;
 }
 .comment_image {
-    border: 1px solid #CBCBCB;
+    border: 1px solid #54A3B4;
     padding: 2px;
     width: 60px;
     float: left;
@@ -385,16 +369,18 @@ a:link {
     font-weight: bold;
 }
 .comment_row input{
-    border: 2px solid #EDEDED;
-    color: #6F7071;
+    background-color: #1C1C1C;
+    border: 1px solid #54A3B4;
+    color: #7E7F7F;
     font-family: verdana,Arial,Times New Roman;
     font-size: 11px;
     padding: 4px;
     width: 75%;
 }
 .comment_row textarea{
-    border: 2px solid #EDEDED;
-    color: #6F7071;
+    background-color: #1C1C1C;
+    border: 1px solid #54A3B4;
+    color: #7E7F7F;
     font-family: verdana,Arial,Times New Roman;
     font-size: 11px;
     padding: 4px;
@@ -405,6 +391,10 @@ a:link {
     margin: 4px 8px;
     padding: 4px;
     width: auto;
+}
+.field_set {
+    border-color: #7E7F7F;
+    border-style: solid;
 }
 .error {
     float: left;
@@ -418,23 +408,25 @@ a:link {
     font-weight: bold;
 }
 .error input{
-    border: 2px solid #EDEDED;
-    color: #6F7071;
+    background-color: #1C1C1C;
+    border: 1px solid #54A3B4;
+    color: #7E7F7F;
     font-family: verdana,Arial,Times New Roman;
     font-size: 11px;
     padding: 4px;
     width: 75%;
 }
 .error textarea{
-    border: 2px solid #EDEDED;
-    color: #6F7071;
+    background-color: #1C1C1C;
+    border: 1px solid #54A3B4;
+    color: #7E7F7F;
     font-family: verdana,Arial,Times New Roman;
     font-size: 11px;
     padding: 4px;
     width: 95%;
 }
 .errorlist {
-    color: red;
+    color: #BE2727;
     float: right;
     list-style: none outside none;
     margin: 0;
@@ -476,19 +468,19 @@ a:link {
 /***************** contact us end **********************/
 /***************** footer start **********************/
 #footer { 
-    border-top: 1px solid #999999;
-    background: none repeat scroll 0 0 #CBCBCB;
-    color: #717171;
+    background: none repeat scroll 0 0 #1C1C1C;
+    border-top: 2px solid #0082E0;
+    bottom: 0;
+    color: #7E7F7F;
     font-size: 9px;
+    height: auto;
     line-height: 15px;
     position: absolute;
     width: 100%;
-    bottom: 0;
-    height: auto;
 }
 .footer_container {
     width: 940px;
-    margin: 10px auto 5px;
+    margin: 15px auto 5px;
     overflow: hidden;
 }
 .best_viwed {
@@ -498,7 +490,6 @@ a:link {
     font-style: italic;
 }
 .copyright {
-    color: #444444;
     width: 50%;
     float: left;
 }
