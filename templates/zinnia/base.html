@@ -15,6 +15,15 @@
 <!--To display main content-->
 {% block content %}
 
+<div class="let_me_read_container" >
+    <div class="let_me_read" onClick="letMeRead();">
+        Let me read
+    </div>
+    <div class="show_options" onClick="showOptions();" style="display:none;">
+        Show options
+    </div>
+</div>
+
 <div class="blog_entry">
     {% block entry_content %}
     {% endblock entry_content %}
@@ -47,4 +56,31 @@
     </div>
 </div>
 
+<script type="text/javascript" >
+    function letMeRead() {
+        // hide blog_entry_tools div
+        document.getElementsByClassName('blog_entry_tools')[0].style.display = 'none';
+
+        // increase width for blog_entry
+        document.getElementsByClassName('blog_entry')[0].style.width = "95%";
+
+        // toggle divs
+        document.getElementsByClassName('let_me_read')[0].style.display = 'none';
+        document.getElementsByClassName('show_options')[0].style.display = 'block';
+    }
+
+    function showOptions() {
+        // show blog_entry_tools div
+        document.getElementsByClassName('blog_entry_tools')[0].style.display = 'block';
+
+        // decrease width for blog_entry
+        document.getElementsByClassName('blog_entry')[0].style.width = "60%";
+
+        // toggle divs
+        document.getElementsByClassName('let_me_read')[0].style.display = 'block';
+        document.getElementsByClassName('show_options')[0].style.display = 'none';
+    }
+</script>
+
 {% endblock content %}
+
