@@ -9,6 +9,15 @@ from django.conf import settings
 # Required for django admin panel
 admin.autodiscover()
 
+# initial params for views
+about_dict = {
+    'template': 'about.html',
+    'form': '',
+    'model': '',
+    'success': '',
+    'extra': ''
+}
+
 urlpatterns = patterns('',
                        # Examples:
                        # url(r'^$', 'openring_site.views.home', name='home'),
@@ -28,7 +37,6 @@ urlpatterns = patterns('',
 
                        # Django zinnia for blogging
                        url(r'^', include('zinnia.urls')),
-
 
                        # Django cms
                        url(r'^', include('cms.urls')),

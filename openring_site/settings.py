@@ -163,6 +163,7 @@ TEMPLATE_DIRS = (
 # Templates for cms
 CMS_TEMPLATES = (
     ('home.html', gettext('Home Page')),
+    ('about.html', gettext('About Me')),
     ('contactus.html', gettext('ContactUs Page')),
 )
 
