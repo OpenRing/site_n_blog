@@ -6,7 +6,7 @@ Django settings variables for production purpose.
 """
 
 # Debug settings
-DEBUG = False
+DEBUG = True
 
 # Database settings
 DB_ENGINE = 'mysql'
