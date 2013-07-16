@@ -462,20 +462,19 @@ a:link {
     width: auto;
 }
 .page {
-    background: none repeat scroll 0 0 #E8E8E8;
-    border: 1px solid #999999;
+    border: 2px solid #54A3B4;
     float: left;
     margin: 8px;
     padding: 0 8px;
     text-align: center;
 }
 .page_current {
-    background: none repeat scroll 0 0 #999999;
-    border: 1px solid #999999;
-    color: white;
+    background: none repeat scroll 0 0 #54A3B4;
+    border: 2px solid #54A3B4;
+    color: #1C1C1C;
 }
 .page a{
-    color: #6F7071;
+    color: #7E7F7F;
 }
 .page a:hover{
     text-decoration: underline;
