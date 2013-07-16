@@ -40,7 +40,7 @@ a:link {
 .menu_container {
     width: 65%;
     float: left;
-    margin: 30px 0 30px 30%;
+    margin: 30px 0 30px 25%;
     min-height: 75px;
 }
 .menu {
@@ -459,6 +459,44 @@ a:link {
     text-decoration: underline;
 }
 /***************** pagination end **********************/
+
+/***************** about start **********************/
+.about_container {
+    padding: 4px 8px;
+}
+.basic_container {
+    overflow: hidden;
+    margin: 10px 4px;
+}
+.image_holder {
+    float: left;
+    margin: 4px;
+    width: 40%;
+}
+.basic_info_holder {
+    float: right;
+    margin: 4px;
+    width: 55%;
+}
+.info_row {
+    margin: 8px 0;
+    padding-left: 50px;
+}
+.info_row a:hover{
+    text-decoration: underline;
+}
+.info_row a:visited{
+    color: peru;
+}
+.info_row_title {
+    background-color: #54A3B4;
+    color: #1C1C1C;
+    font-weight: bold;
+    margin: 8px 0;
+    padding: 2px 8px;
+}
+
+/***************** about end **********************/
 
 /***************** contact us start **********************/
 .contactus_form {
