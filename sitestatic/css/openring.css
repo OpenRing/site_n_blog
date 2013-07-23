@@ -5,11 +5,11 @@ html {
     height:100%; 
 }
 body {
-    background: #1C1C1C;
+    background: #F2F1ED;
     font-family: verdana, Arial, Times New Roman;
     font-size: 11px;
     margin : 0px auto ;
-    color : #7E7F7F;
+    color : #999999;
     line-height: 20px;
     padding: 0;
     height: 100%;
@@ -40,7 +40,7 @@ a:link {
 .menu_container {
     width: 65%;
     float: left;
-    margin: 30px 0 30px 25%;
+    margin: 30px 0 30px 28%;
     min-height: 75px;
 }
 .menu {
@@ -49,8 +49,8 @@ a:link {
     list-style: none outside none;
 }
 .selected {
-    border-bottom: 4px solid #0082E0;
-    color: #0082E0;
+    border-bottom: 2px solid #262626;
+    color: #262626;
     float: left;
     font-weight: bold;
     margin: 0 25px;
@@ -60,7 +60,7 @@ a:link {
     cursor: default;
 }
 .sibling {
-    color: #0082E0;
+    color: #262626;
     cursor: pointer;
     float: left;
     font-weight: bold;
@@ -77,26 +77,25 @@ a:link {
 
 /***************** bread crumb start **********************/
 #bread_crumb { 
-    background: #1C1C1C;
-    padding: 10px 0px;
-    border-top: 2px solid #0082E0;
+    background: #F2F1ED;
 }
 .bread_crumb_holder {
-    width: 940px;
+    border-top: 8px solid #262626;
     margin: auto;
     overflow: hidden;
+    padding-top: 30px;
+    width: 940px;
 }
 .bread_crumbs_container {
     float: left;
     width: 60%;
-    padding-left: 15px;
 }
 .breadcrumbs {
     float: left;
     font-size: 10px;
 }
 .breadcrumbs a{
-    color: #6F7071;
+    color: #999999;
 }
 .breadcrumbs a:hover{
     text-decoration: underline;
@@ -106,12 +105,11 @@ a:link {
     margin-left: 6px;
 }
 .search_holder {
-    width: 35%;
     float: right;
 }
 .search_box {
-    background-color: #1C1C1C;
-    border: 1px solid #54A3B4;
+    background-color: #F2F1ED;
+    border: 1px solid #B0B0B0;
     color: #7E7F7F;
     font-family: verdana,Arial,Times New Roman;
     font-size: 11px;
@@ -119,9 +117,9 @@ a:link {
     width: 220px;
 }
 .submitbutton {
-    background-color: #54A3B4;
-    border: 1px solid #54A3B4;
-    color: #1C1C1C;
+    background-color: #B0B0B0;
+    border: 1px solid #B0B0B0;
+    color: #F2F1ED;
     cursor: pointer;
     font-family: verdana,Arial,Times New Roman;
     font-size: 11px;
@@ -139,25 +137,26 @@ a:link {
 }
 .let_me_read_container {
     overflow: hidden;
-    padding-right: 38px;
 }
 .let_me_read {
-    background-color: #54A3B4;
-    color: #1C1C1C;
     cursor: pointer;
     float: right;
     font-weight: bold;
     text-align: center;
-    width: 11%;
+    font-style: italic;
 }
 .show_options {
-    background-color: #54A3B4;
-    color: #1C1C1C;
     cursor: pointer;
     float: right;
     font-weight: bold;
     text-align: center;
-    width: 11%;
+    font-style: italic;
+}
+.let_me_read:hover { 
+    text-decoration: underline;
+}
+.show_options:hover { 
+    text-decoration: underline;
 }
 /***************** container end **********************/
 
@@ -177,16 +176,13 @@ a:link {
 .blog_entry {
     float: left ;
     width: 60%;
-    margin: 0 15px;
 }
 .blog_entry_tools {
-    float: left ;
-    width: 30%;
-    padding: 0 12px;
-    margin: 0 15px;
+    float: right;
+    width: 34%;
 }
 .widget_title {
-    border-bottom: 1px solid #7E7F7F;
+    border-bottom: 1px solid #999999;
     font-size: 11px;
     font-weight: bold;
     padding: 2px 8px;
@@ -213,8 +209,7 @@ a:link {
     width: 100%;
 }
 .entry {
-    background: none repeat scroll 0 0 #1C1C1C;
-    border: 1px solid #54A3B4;
+    border: 1px solid #B0B0B0;
     font-weight: bold;
 }
 
@@ -244,7 +239,6 @@ a:link {
     font-family: times new roman;
     font-size: 24px;
     font-style: italic;
-    font-weight: bold;
     padding: 4px 0;
 }
 .entry-title a{
@@ -265,8 +259,8 @@ a:link {
     padding-top: 15px;
 }
 .publised_date {
-    background: none repeat scroll 0 0 #54A3B4;
-    color: #1C1C1C;
+    background: none repeat scroll 0 0 #B0B0B0;
+    color: #F2F1ED;
     float: left;
     font-size: 11px;
     height: 44px;
@@ -277,6 +271,9 @@ a:link {
     text-align: center;
     width: 50px;
     font-weight: bold;
+}
+.published {
+    border: 1px solid #B0B0B0;
 }
 .entry-content {
     text-align: justify;
@@ -324,15 +321,15 @@ a:link {
     float: left;
 }
 .continue-reading {
-    background: none repeat scroll 0 0 #54A3B4;
-    border: 1px solid #54A3B4;
+    background: none repeat scroll 0 0 #B0B0B0;
+    border: 1px solid #B0B0B0;
+    color: #F2F1ED;
+    cursor: pointer;
     float: right;
+    font-size: 9px;
+    font-weight: bold;
     margin: 10px 0;
     padding: 4px 10px;
-    cursor: pointer;
-    color: #1C1C1C;
-    font-weight: bold;
-    font-size: 9px;
 }
 .continue-reading a{
     color: #6F7071;
@@ -346,13 +343,13 @@ a:link {
     margin-bottom: 20px;
 }
 .comment {
-    border: 2px solid #7E7F7F;
+    border: 2px solid #B0B0B0;
     margin: 8px;
     padding: 8px;
     width: 95%;
 }
 .comment_image {
-    border: 1px solid #54A3B4;
+    border: 1px solid #B0B0B0;
     padding: 2px;
     width: 60px;
     float: left;
@@ -391,18 +388,18 @@ a:link {
     font-weight: bold;
 }
 .comment_row input{
-    background-color: #1C1C1C;
-    border: 1px solid #54A3B4;
-    color: #7E7F7F;
+    background-color: #F2F1ED;
+    border: 1px solid #B0B0B0;
+    color: #999999;
     font-family: verdana,Arial,Times New Roman;
     font-size: 11px;
     padding: 4px;
     width: 75%;
 }
 .comment_row textarea{
-    background-color: #1C1C1C;
-    border: 1px solid #54A3B4;
-    color: #7E7F7F;
+    background-color: #F2F1ED;
+    border: 1px solid #B0B0B0;
+    color: #999999;
     font-family: verdana,Arial,Times New Roman;
     font-size: 11px;
     padding: 4px;
@@ -415,7 +412,7 @@ a:link {
     width: auto;
 }
 .field_set {
-    border-color: #7E7F7F;
+    border-color: #B0B0B0;
     border-style: solid;
 }
 .error {
@@ -430,25 +427,25 @@ a:link {
     font-weight: bold;
 }
 .error input{
-    background-color: #1C1C1C;
-    border: 1px solid #54A3B4;
-    color: #7E7F7F;
+    background-color: #F2F1ED;
+    border: 1px solid #B0B0B0;
+    color: #999999;
     font-family: verdana,Arial,Times New Roman;
     font-size: 11px;
     padding: 4px;
     width: 75%;
 }
 .error textarea{
-    background-color: #1C1C1C;
-    border: 1px solid #54A3B4;
-    color: #7E7F7F;
+    background-color: #F2F1ED;
+    border: 1px solid #B0B0B0;
+    color: #999999;
     font-family: verdana,Arial,Times New Roman;
     font-size: 11px;
     padding: 4px;
     width: 95%;
 }
 .errorlist {
-    color: #BE2727;
+    color: #DE5A51;
     float: right;
     list-style: none outside none;
     margin: 0;
@@ -510,8 +507,8 @@ a:link {
     color: peru;
 }
 .info_row_title {
-    background-color: #54A3B4;
-    color: #1C1C1C;
+    background-color: #B0B0B0;
+    color: #F2F1ED;
     font-weight: bold;
     margin: 8px 0;
     padding: 2px 8px;
@@ -527,10 +524,8 @@ a:link {
 /***************** contact us end **********************/
 /***************** footer start **********************/
 #footer { 
-    background: none repeat scroll 0 0 #1C1C1C;
-    border-top: 2px solid #0082E0;
     bottom: 0;
-    color: #7E7F7F;
+    color: #262626;
     font-size: 9px;
     height: auto;
     line-height: 15px;
@@ -538,15 +533,18 @@ a:link {
     width: 100%;
 }
 .footer_container {
-    width: 940px;
+    border-top: 8px solid #262626;
     margin: 15px auto 5px;
     overflow: hidden;
+    padding-top: 10px;
+    width: 940px;
 }
 .best_viwed {
-    text-align: right;
-    width: 96%;
+    color: #999999;
     float: left;
     font-style: italic;
+    text-align: right;
+    width: 100%;
 }
 .copyright {
     width: 50%;
