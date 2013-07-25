@@ -230,7 +230,7 @@ INSTALLED_APPS = (
 # )
 
 # default pagination for zinnia blog
-ZINNIA_PAGINATION = 5
+ZINNIA_PAGINATION = 1
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
